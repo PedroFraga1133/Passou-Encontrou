@@ -1,0 +1,126 @@
+
+.bg-hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    @include responsive(s){
+        height: 100vh;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s ease;
+
+    overflow: hidden;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::after{
+        content: '';
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 7, 13, 0.30);
+
+    }
+}
+
+
+.bg-project{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+
+    @include responsive(s){
+        height: 50vh;
+    }
+
+    transition: 1s ease;
+
+    overflow: hidden;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::after{
+        content: '';
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 7, 13, 0.5);
+    }
+}
+
+
+.container-hero {
+    max-width: $container-xl;
+    height: 100vh;
+    margin: 0 auto;
+  
+    padding: 96px 16px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+  
+    @include responsive(s) {
+      flex-direction: column;
+      height: auto;
+  
+      padding: 144px 8px 64px 8px;
+    }
+}
+
+.text-frontpush{
+    position: absolute;
+    top: 75%;
+    left: 40px;
+}
+
+
+
+.bg-photo-cta{
+    background-image: url('../img/2-min.webp');
+    background-size: cover;
+}
+
+.bg-photo-cta-2{
+    background-image: url('../img/1-min.webp');
+    background-size: cover;
+}
+
+.bg-photo-cta-3{
+    background-image: url('../img/3-min.webp');
+    background-size: cover;
+}
+
+.bg-photo-cta-4{
+    background-image: url('../img/4-min.webp');
+    background-size: cover;
+}
+
+

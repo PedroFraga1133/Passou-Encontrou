@@ -1,0 +1,107 @@
+
+.accordion-button{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    background-color: transparent;
+    position: relative;
+    padding: 14px 16px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+
+    background-color: $secondary-normal;
+    transition: 0.7s ease;
+
+    color: $black-dark;
+    @include typeface-1(h5, desktop);
+    @include responsive(s) {
+        @include typeface-1(h5, mobile);
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 24px;
+
+        width: 8px;
+        height: 8px;
+        border-radius: 1px;
+        transition: .5s ease;
+        border-right: 2px solid $primary-normal;
+        border-top: 2px solid $primary-normal;
+
+        transform: rotate(135deg) translate3d(0, 10px,0);
+    }
+
+    &:hover{
+        padding-left: 16px;
+    } 
+}
+
+
+.accordion-button-transparent{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    background-color: transparent;
+    position: relative;
+    padding: 24px 16px;
+    border-bottom: 2px solid rgba(0, 7, 13, 0.1);
+
+    background-color: transparent;
+    transition: 0.7s ease;
+
+    color: $black-lighten;
+    @include typeface-1(h6, desktop);
+    @include responsive(s) {
+        @include typeface-1(h6, mobile);
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 40%;
+        right: 8px;
+
+        width: 18px;
+        height: 18px;
+        border-radius: 1px;
+        transition: .5s ease;
+        background: url('../../svg/icon-plus.svg');
+        background-size: cover;
+
+        transform: rotate(0deg);
+    }
+
+    &:hover{
+        padding-left: 16px;
+    } 
+}
+
+.accordion-button-active, .accordion-button-transparent-active{
+
+    &::before{
+        transform: rotate(315deg);
+    }
+}
+
+.accordion-content, .accordion-content-transparent{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease;
+
+    &:target{
+        overflow: auto;
+        max-height: 300px;
+    }
+
+}
+

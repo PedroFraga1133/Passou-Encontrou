@@ -1,0 +1,304 @@
+.icon{
+  max-width: 64px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 56px;
+  }
+
+  &:hover{
+    transform: translate(0,-4px,0);
+  }
+}
+
+.icon-s{
+  max-width: 40px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 32px;
+  }
+
+  &:hover{
+    transform: translate(0,-4px,0);
+  }
+}
+
+.icon-xs{
+  max-width: 24px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 24px;
+  }
+
+  &:hover{
+    transform: translate(0,-4px,0);
+  }
+}
+
+.icon-m{
+  max-width: 96px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 80px;
+  }
+}
+
+.icon-l{
+  max-width: 120px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 96px;
+  }
+}
+
+.icon-xl{
+  max-width: 172px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 144px;
+  }
+
+}
+
+.icon-enterprise{
+  filter: grayscale(100%) opacity(30%);
+  transition: 1s ease;
+
+  &:hover{
+    filter: grayscale(0%);
+  }
+}
+
+.icon-title{
+  width: 56px;
+  height: 56px;
+
+  @include responsive(s){
+    width: 48px;
+    height: 48px;
+  }
+
+  border-radius: 50%;
+}
+
+.icon-animation{
+  width: 56px;
+  height: 56px;
+
+  @include responsive(s){
+    width: 48px;
+    height: 48px;
+  }
+
+  position: relative;
+
+  border-radius: 50%;
+
+  animation: rotate-icon 7s ease-in-out infinite alternate;
+}
+
+.icon-imobios{
+  width: 56px;
+  height: 56px;
+
+  @include responsive(s){
+    width: 48px;
+    height: 48px;
+  }
+
+  position: relative;
+
+  border-radius: 50%;
+
+  
+}
+
+.icon-animation-dashed{
+  width: 56px;
+  height: 56px;
+
+  @include responsive(s){
+    width: 48px;
+    height: 48px;
+  }
+
+  position: relative;
+
+  border-radius: 50%;
+
+  border: 2px dashed $yellow-light;
+
+  animation: rotate-icon 7s ease-in-out 2s infinite alternate;
+}
+
+.icon-animation-solid{
+  width: 56px;
+  height: 56px;
+
+  @include responsive(s){
+    width: 48px;
+    height: 48px;
+  }
+
+  position: relative;
+
+  border-radius: 50%;
+
+  border: 2px solid $yellow-light;
+}
+
+@keyframes rotate-icon{
+  0%,50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.bg-icon-animation-blue{
+  background-color: $primary-normal;
+  transition: .5s ease;
+
+  &:hover{
+    background-color: $primary-light;
+  }
+}
+
+.bg-icon-animation-yellow{
+  background-color: $secondary-normal;
+
+  transition: .5s ease;
+
+  &:hover{
+    background-color: $secondary-light;
+  }
+}
+
+.bg-icon-animation-white{
+  background-color: $white-normal;
+
+  transition: .5s ease;
+
+  &:hover{
+    background-color: $white-light;
+    opacity: .8;
+  }
+}
+
+.bg-icon-rs{
+  background-color: #FFF2DE;
+
+  transition: .5s ease;
+
+  &:hover{
+    background-color: $secondary-lighten;
+    opacity: .8;
+  }
+}
+
+.path-white{
+  path{
+    fill: #fff;
+  }
+}
+
+
+.icon-animation-big{
+  width: 160px;
+  height: 160px;
+
+  @include responsive(s){
+    width: 128px;
+    height: 128px;
+  }
+
+  position: relative;
+
+  border-radius: 50%;
+
+  animation: rotate-icon 7s ease-in-out infinite alternate;
+}
+
+.icon-big{
+  transform: scale(3.5);
+
+  @include responsive(s){
+    transform: scale(2.5);
+  }
+}
+
+// fotos dos integrantes
+
+.photo-profile {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background-color: #f49f45;
+
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  a{
+      cursor: pointer;
+  }
+}
+
+/*
+.photo-1{
+  background-image: url('../img/card-a1.png');
+}
+
+.photo-2{
+  background-image: url('../img/card-a1.png');
+}
+.photo-3{
+  background-image: url('../img/card-a1.png');
+}
+.photo-4{
+  background-image: url('../img/card-a1.png');
+}
+.photo-5{
+  background-image: url('../img/card-a1.png');
+}
+.photo-6{
+  background-image: url('../img/card-a1.png');
+}
+.photo-7{
+  background-image: url('../img/card-a1.png');
+}
+.photo-8{
+  background-image: url('../img/card-a1.png');
+}
+.photo-9{
+  background-image: url('../img/card-a1.png');
+}
+.photo-10{
+  background-image: url('../img/card-a1.png');
+}
+.photo-11{
+  background-image: url('../img/card-a1.png');
+}
+.photo-12{
+  background-image: url('../img/card-a1.png');
+}
+.photo-13{
+  background-image: url('../img/card-a1.png');
+}
+.photo-14{
+  background-image: url('../img/card-a1.png');
+}
+.photo-15{
+  background-image: url('../img/card-a1.png');
+}
+
+*/

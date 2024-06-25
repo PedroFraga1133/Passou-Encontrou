@@ -1,0 +1,258 @@
+.icon-sun{
+    animation: icon-sun 7s ease infinite alternate;
+
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes icon-sun{
+    0%{
+        transform: rotate(0deg) translate3d(0,0,0);
+    }   
+    100%{
+        transform: rotate(360deg) translate3d(0,0,0);
+    }
+}
+
+.fill-logo{
+    animation: fill-logo 5s ease forwards;
+}
+
+@keyframes fill-logo{
+    0%{
+        fill-opacity: 0;
+    }
+    50%{
+        fill-opacity: 0;
+    }
+    100%{
+        fill-opacity: 1;
+    }
+}
+
+.stroke-logo{
+    animation: stroke-logo 5s ease forwards;
+}
+
+@keyframes stroke-logo{
+    0%{
+        stroke-dasharray: 0 50;
+        stroke-width: 1;
+    }
+    50%{
+        stroke-dasharray: 50 0;
+        stroke-width: 1;
+    }
+    100%{
+        stroke-width: 0;
+    }
+}
+
+.path-logo{
+    animation: path-logo 5s ease forwards;
+}
+
+.path-logo-infinite{
+    animation: path-logo-infinite 3s ease infinite alternate;
+}
+
+
+@keyframes path-logo{
+    0%{
+        stroke-dasharray: 0 50;
+        stroke-width: 1;
+        fill-opacity: 0;
+    }
+    60%{
+        stroke-dasharray: 50 0;
+        stroke-width: 1;
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes path-logo-infinite{
+    0%{
+        stroke-dasharray: 0 100;
+        stroke-width: 1;
+        fill-opacity: 0;
+    }
+    80%{
+        stroke-dasharray: 100 0;
+        stroke-width: 1;
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-width: 0;
+        fill-opacity: 1;
+    }
+}
+
+
+
+////////////// SCREEN LOADING //////////////
+.screen-loading{
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-dark;
+
+    z-index: 999;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+
+    
+
+    pointer-events: none;
+
+    svg{
+        width: 72px !important;
+    }
+}
+
+
+.logo-angel{
+    animation: loader 4s linear forwards;
+}
+ 
+@keyframes loader{
+    0%,5%{
+        fill-opacity: 0;
+        stroke-dasharray: 0 80;
+    }
+    70%{
+        fill-opacity: 0;
+        stroke-dasharray: 80 0;
+    }
+    100%{
+        fill-opacity: 1;
+        stroke-dasharray: 80 0;
+    }
+    
+}
+
+.bar-loader{
+    width: 96px;
+    height: 1px;
+    top: -170px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 0;
+        height: 100%;
+
+        background: linear-gradient(255deg, $primary-light 0.58%, $secondary-dark 97.98%);
+
+        animation: bar-loader 4s ease forwards;
+    }
+}
+
+@keyframes bar-loader{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+// FIGNU2 (ANIMAÇÃO DO CELULAR GdM)
+
+.fignu2-screen1{
+    animation: fignu2-screen1 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen1{
+    0%,30%{
+        opacity: 1;
+    }
+    35%,100%{
+        opacity: 0;
+    }
+}
+
+.fignu2-screen2{
+    animation: fignu2-screen2 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen2{
+    0%,30%{
+        opacity: 0;
+    }
+    30%,55%{
+        opacity: 1;
+    }
+    60%,100%{
+        opacity: 0;
+    }
+}
+
+
+.fignu2-screen3{
+    animation: fignu2-screen3 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen3{
+    0%,40%{
+        opacity: 0;
+    }
+    55%,70%{
+        opacity: 1;
+    }
+    75%,100%{
+        opacity: 0;
+    }
+}
+
+.fignu2-screen4{
+    animation: fignu2-screen4 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen4{
+    0%,70%{
+        opacity: 0;
+    }
+    75%,100%{
+        opacity: 1;
+    }
+    
+}
+
+.fignu2-icon1{
+    animation: fignu2-icon-move 3s ease 0s infinite alternate;
+}
+
+.fignu2-icon5{
+    animation: fignu2-icon-move 3s ease 1s infinite alternate;
+}
+
+@keyframes fignu2-icon-move{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    0%{
+        transform: translate3d(10px,-40px,0);
+    }
+}
