@@ -3187,55 +3187,42 @@ nav {
   cursor: pointer;
 }
 
-/*
-.photo-1{
-  background-image: url('../img/card-a1.png');
+.photo-1 {
+  background-image: url("/img/time/photo-1.jpeg");
 }
 
-.photo-2{
-  background-image: url('../img/card-a1.png');
-}
-.photo-3{
-  background-image: url('../img/card-a1.png');
-}
-.photo-4{
-  background-image: url('../img/card-a1.png');
-}
-.photo-5{
-  background-image: url('../img/card-a1.png');
-}
-.photo-6{
-  background-image: url('../img/card-a1.png');
-}
-.photo-7{
-  background-image: url('../img/card-a1.png');
-}
-.photo-8{
-  background-image: url('../img/card-a1.png');
-}
-.photo-9{
-  background-image: url('../img/card-a1.png');
-}
-.photo-10{
-  background-image: url('../img/card-a1.png');
-}
-.photo-11{
-  background-image: url('../img/card-a1.png');
-}
-.photo-12{
-  background-image: url('../img/card-a1.png');
-}
-.photo-13{
-  background-image: url('../img/card-a1.png');
-}
-.photo-14{
-  background-image: url('../img/card-a1.png');
-}
-.photo-15{
-  background-image: url('../img/card-a1.png');
+.photo-2 {
+  background-image: url("/img/time/photo-2.png");
 }
 
-*/
+.photo-3 {
+  background-image: url("/img/time/photo-3.jpeg");
+}
+
+.photo-4 {
+  background-image: url("/img/time/photo-4.jpg");
+}
+
+.photo-5 {
+  background-image: url("/img/time/photo-5.jpeg");
+}
+
+.photo-6 {
+  background-image: url("/img/time/photo-6.jfif");
+}
+
+.photo-7 {
+  background-image: url("/img/time/photo-7.png");
+}
+
+.photo-8 {
+  background-image: url("/img/time/photo-8.jpeg");
+}
+
+.photo-9 {
+  background-image: url("/img/time/photo-9.png");
+}
+
 .btn {
   display: inline-block;
   color: #240606;
