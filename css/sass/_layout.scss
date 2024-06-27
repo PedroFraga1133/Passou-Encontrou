@@ -1409,13 +1409,4 @@ canvas{
   border-radius: 8px;
 }
 
-.phone{
-  @include responsive(s){
-          width: 600px; 
-          height: 888px;
-  }
-  @include responsive(xs){
-      width: 380px; 
-      height: 688px;
-  }
-}
+

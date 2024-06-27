@@ -1445,19 +1445,6 @@ canvas {
   border-radius: 8px;
 }
 
-@media screen and (max-width: 960px) {
-  .phone {
-    width: 600px;
-    height: 888px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .phone {
-    width: 380px;
-    height: 688px;
-  }
-}
-
 .s-0 {
   margin: 0;
   padding: 0;

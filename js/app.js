@@ -50,30 +50,6 @@ window.addEventListener('scroll', scrollHeader);
 
 
 
-/*==================================================================*/
-/*==================== CALCULADORA DE POTÊNCIA ====================*/
-/*==================================================================*/
-/*
-var power = document.querySelector('.power').innerHTML;
-var qtd_solar_plate = document.querySelector('.solar-plate').innerHTML;
-
-var btn_minus_plate = document.querySelector('.btn-minus-plate');
-var btn_plus_plate = document.querySelector('.btn-plus-plate');
-
-btn_plus_plate.addEventListener('click', () => {
-  qtd_solar_plate++;
-  document.querySelector('.solar-plate').innerHTML = qtd_solar_plate;
-  document.querySelector('.power').innerHTML = (0.33 * qtd_solar_plate).toFixed(2);
-});
-
-btn_minus_plate.addEventListener('click', () => {
-  if(qtd_solar_plate >= 0){
-      qtd_solar_plate--;
-  }
-  document.querySelector('.solar-plate').innerHTML = qtd_solar_plate;
-  document.querySelector('.power').innerHTML = (0.33 * qtd_solar_plate).toFixed(2);
-});
-*/
 
 
 /*==================================================================*/
@@ -168,18 +144,7 @@ setInterval(() => {
 }, 10000);
 
 /*
-document.querySelector('.btn-next').addEventListener('click', () => {
-  document.querySelector('.bg-hero').style.backgroundImage = "url(img/"+ i +"-min.png)";
-  i++;
-  if(i == 8) i = 2;
-});
 
-document.querySelector('.btn-prev').addEventListener('click', () => {
-  document.querySelector('.bg-hero').style.backgroundImage = "url(img/"+ i +"-min.png)";
-  i--;
-  if(i == 2) i = 8;
-});
-*/
 
 /*==================================================================*/
 /*==================== GRID PHOTOS ABOUT ====================*/
@@ -199,48 +164,6 @@ setInterval(() => {
   document.querySelector('.photo-about-3').style.backgroundImage = "url(img/parcerias/"+ gerarNumeroAleatorio(1, 9) +".png)";
 }, 6000);
 
-
-/*==================================================================*/
-/*==================== GRID PHOTOS TAPE ====================*/
-/*==================================================================*/
-/*
-setInterval(() => {
-  document.querySelector('.photo-1').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 8000);
-
-setInterval(() => {
-  document.querySelector('.photo-2').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 4000);
-
-setInterval(() => {
-  document.querySelector('.photo-3').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 6000);
-
-setInterval(() => {
-  document.querySelector('.photo-4').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 9000);
-*/
-
-/*==================================================================*/
-/*==================== GRID PHOTOS CTA ====================*/
-/*==================================================================*/
-/*
-setInterval(() => {
-  document.querySelector('.photo-cta-1').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 8000);
-
-setInterval(() => {
-  document.querySelector('.photo-cta-2').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 12000);
-
-setInterval(() => {
-  document.querySelector('.photo-cta-3').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 15000);
-
-setInterval(() => {
-  document.querySelector('.photo-cta-4').style.backgroundImage = "url(img/"+ gerarNumeroAleatorio(1, 9) +".jpg)";
-}, 9000);
-*/
 
 
 /*==================================================================*/
@@ -360,35 +283,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  /////////////////////////////////
-  // SECTIONS
-  /////////////////////////////////
-  /*
-  gsap.from("#section-iam div",{
-      opacity: 0,
-      y: 100,
-      duration: 2,
-      ease: "power4.out",
-      stagger:{each: 0.2}, 
-      scrollTrigger:{
-          trigger: '#section-iam',
-          start: 'top 80%',
-          end: 'bottom 00%',
-      }
-  });
-  */
 
 
 });
-
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-
-
-//ScrollTrigger.addEventListener("scrollStart", () => ScrollTrigger.refresh() );
-
 
 
   
